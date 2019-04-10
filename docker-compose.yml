@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  signalrchat:
+    image: venkateshsrini3/signalrchat
+    build:
+      context: .
+      dockerfile: SignalRChat/Dockerfile
+    ports:
+      - 5601:80
+      
